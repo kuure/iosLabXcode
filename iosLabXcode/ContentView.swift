@@ -17,6 +17,7 @@ struct ContentView: View {
             Text("this was more of a pain that I remember")
             Text("Im about to push this to github")
             Text("I made a branch")
+            Text("I addd something new")
         }
         .padding()
     }
