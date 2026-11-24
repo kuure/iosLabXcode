@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var buttonClicked = false
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -18,6 +20,15 @@ struct ContentView: View {
             Text("Im about to push this to github")
             Text("I made a branch")
             Text("I addd something new")
+
+            Button("Click Me") {
+                buttonClicked = true
+            }
+            .buttonStyle(.borderedProminent)
+
+            if buttonClicked {
+                Text("button clicked")
+            }
         }
         .padding()
     }
